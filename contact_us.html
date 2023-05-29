@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="img/game.jpg">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Contact Us</title>
+    <style>
+        .form_holder{
+            width: fit-content;
+            background-color: #e8e8e8;
+            margin: 50px auto;
+            border-radius: 10px;
+            padding: 10px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        img{
+            border-radius: 10px;
+        }@media screen and (max-width: 768px) {
+             body {
+             padding: 14px;
+        }
+        .form_holder {
+             flex-direction: column;
+             align-items: flex-start;
+        }
+        .form_holder form {
+             margin-top: 15px;
+        }
+         .form_holder div {
+           margin-top: 15px;
+        }
+}
+
+        @media screen and (max-width: 900px) {
+           h1 {
+               font-size: 20px;
+        }
+}
+
+        @media screen and (max-width: 768px) {
+          table {
+             font-size: 10px;
+         }
+          .pages > li > a {
+               font-size: 10px !important;
+          }
+}
+
+        @media screen and (max-width: 450px) {
+        .pages {
+             display: flex;
+             flex-wrap: wrap;
+    }
+}
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us </h1>
+        <nav>
+            <div class="head_title">
+          
+                <ul class="pages">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="video_player.html">Video Player</a></li>
+                  <li><a href="compare.html">Compare</a></li>
+                  <li class="active"><a class="active_a" href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    
+    <div class="form_holder">
+    
+        <form action="mailto:sepidebakhshi1376@gmail.com" method="post">
+            <h4>Fill the form to contact us:</h4>
+            <input type="text" placeholder="Enter your email" />
+            <br/>
+            <br/>
+            <span>Your sex:</span>
+            <br/>
+            <input type="radio"  name="select_one"/> Male
+            <input type="radio" name="select_one"/> Female
+            <br/>
+            <br/>
+            <textarea placeholder="Your message" rows="5"></textarea>
+            <br/>
+            <br/>
+            <input type="checkbox" value="yes"/> Receive Mails
+            <br/>
+            <br/>
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset"/>
+        </form>
+    <div style="display:flex;flex-direction: column;">
+        <a href="https://fortnite.com">
+            <img src="img/fortnite.webp" width="150" height="100" alt="fortnite" />
+        </a>
+        <a href="https://playstation.com">
+            <img src="img/a91e87c6-0a0d-4af2-89ee-76fcc8f73d1e.91b01b9b3ccee4ca0d18330fc0f4de76.webp" width="150" height="100" alt="playstation" style="margin-top: 10px;"/>
+
+        </a>
+    </div>
+       
+    </div>
+
+
+  <footer>
+    <h6 style="text-align: center;">Sepideh Bakhshi @ 2023</h6>
+  </footer>
+
+  
+</body>
+</html>

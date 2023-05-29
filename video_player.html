@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img/game.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Video Player</title>
+    <style>
+        form{
+            margin-top: 50px;
+        }
+        #videoPlayer{
+          border: 1px dashed black;
+          height: 300px;
+          width: 600px;
+          border-radius: 10px;
+          max-width: 100%;
+    
+        }
+        video{
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+        #videoUrl{
+          display: inline;
+        }
+       
+        @media screen and (max-width: 900px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    video {
+        font-size: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+    .pages > li > a {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pages {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+       
+          
+        
+    </style>
+</head>
+<body >
+
+  <header>
+    <h1 id="text1">Play Your Own Video</h1>
+    <nav>
+    <div class="head_title">
+     
+        <ul class="pages">
+          <li><a class="link1" href="index.html">Home</a></li>
+          <li class="active"><a class="active_a" href="video_player.html">Video Player</a></li>
+          <li><a class="link1" href="compare.html">Compare</a></li>
+          <li><a class="link1" href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </div>
+  </nav>
+</header>
+
+
+        <h4 id="text">Enter Video URL To Show: <span onclick="toggleTheme()" style="cursor: pointer;">Toggle Theme</span></h4>
+        
+        <input type="text" id="videoUrl" name="videoUrl" placeholder="https://www.example.com/video.mp4">
+        <button type="button" onclick="playVideo()">Play Video</button>
+        <br/>
+        <br/>
+    <div id="videoPlayer"></div>
+     
+    
+
+      <br/>
+      <br/>
+    <footer>
+      <h6 style="text-align: center;">Sepideh Bakhshi @ 2023</h6>
+    </footer>
+
+    <script>
+      function playVideo() {
+        var videoUrl = document.getElementById("videoUrl").value;
+        var videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.innerHTML = '<video controls><source src="' + videoUrl + '"></video>';
+      }
+
+      function toggleTheme(){
+        var body = document.body;
+        var bodyStyle = window.getComputedStyle(body);
+        var backgroundColor = bodyStyle.getPropertyValue('background-color');
+
+        if(backgroundColor==="rgb(0, 0, 0)"){
+          body.style.backgroundColor="#fff"
+          document.getElementById("text").style.color="#000"
+          document.getElementById("text1").style.color="#000"
+          document.getElementById("videoPlayer").style.border="1px dashed black"
+          document.querySelector("h6").style.color="#000"
+
+          var links =  document.getElementsByTagName("a");
+          for (var i = 0; i < links.length; i++) {
+            links[i].style.color = '#000'; // Change the color to your desired color
+          }
+
+        
+          
+        }else{
+          body.style.backgroundColor="#000"
+          document.getElementById("text").style.color="#fff"
+          document.getElementById("text1").style.color="#fff"
+          document.getElementById("videoPlayer").style.border="1px dashed white"
+          document.querySelector("h6").style.color="#fff"
+          var links =  document.getElementsByTagName("a");
+          for (var i = 0; i < links.length; i++) {
+            links[i].style.color = '#fff'; // Change the color to your desired color
+          }
+
+        }
+      
+      }
+    </script>
+
+</body>
+</html>

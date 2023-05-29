@@ -1,0 +1,49 @@
+.head_title{
+    text-align:center;
+
+}
+.list_title{
+    font-weight: bold;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+body{
+    padding: 25px;
+    font-family: Arial, sans-serif;
+}
+.pages{
+    padding: 0;
+    margin-top: 40px;
+}
+
+.pages > li{
+   display: inline;
+   cursor: pointer;
+   margin: 20px;
+}
+
+.pages > li> a{
+    color: black;
+    text-decoration: none;
+ }
+
+.active{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+  
+ }
+ .active_a{
+    color: white !important
+ }
+ .small-text {
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+
+
+  

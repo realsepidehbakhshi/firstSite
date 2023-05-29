@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="img/game.jpg">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Compare</title>
+    <style>
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #cccccc;
+        }
+       
+      
+        @media screen and (max-width: 900px) {
+            h1{
+              font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 10px;
+            }
+            .pages > li >a  {
+                  font-size: 10px !important;
+              }
+        }
+        @media screen and (max-width: 450px) {
+           .pages{
+            display: flex;
+             flex-wrap: wrap;
+           }
+        }
+
+
+
+ 
+
+
+
+         
+    </style>
+</head>
+<body style="background-image: url(./img/back.jpg); background-repeat: no-repeat; background-size: cover;">
+
+    <header>
+      <h1>Video Game Comparison Table</h1>
+      <nav>
+      <div class="head_title">
+      
+          <ul class="pages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="video_player.html">Video Player</a></li>
+            <li class="active"><a class="active_a" href="compare.html">Compare</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+    
+    <h1>Comparison:</h1>
+    <figure>
+      <figcaption>This is a table caption for comparison.</figcaption>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Game Title</th>
+            <th>Genre</th>
+            <th>Release Year</th>
+            <th>Developer</th>
+            <th>Publisher</th>
+            <th>Platforms</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Legend of Zelda: Breath of the Wild</td>
+            <td>Action-Adventure</td>
+            <td>2017</td>
+            <td>Nintendo EPD</td>
+            <td>Nintendo</td>
+            <td>Nintendo Switch, Wii U</td>
+          </tr>
+          <tr>
+            <td>Red Dead Redemption 2</td>
+            <td>Action-Adventure</td>
+            <td>2018</td>
+            <td>Rockstar Studios</td>
+            <td>Rockstar Games</td>
+            <td>PlayStation 4, Xbox One, PC</td>
+          </tr>
+          <tr>
+            <td>Fortnite</td>
+            <td>Battle Royale</td>
+            <td>2017</td>
+            <td>Epic Games</td>
+            <td>Epic Games</td>
+            <td>PlayStation 4, Xbox One, Nintendo Switch, PC, iOS, Android</td>
+          </tr>
+          <tr>
+            <td>Call of Duty: Warzone</td>
+            <td>Battle Royale</td>
+            <td>2020</td>
+            <td>Infinity Ward, Raven Software</td>
+            <td>Activision</td>
+            <td>PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, PC</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+  
+
+    <br/>
+    <br/>
+  <footer>
+    <h6 style="text-align: center;">Sepideh Bakhshi @ 2023</h6>
+  </footer>
+
+  
+</body>
+</html>
